@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link to favicon -->
+    <link type="image/png" href="assets/apple-touch-icon.png" rel="icon">
+    <title>Oksana's Bootcamp Project One</title>
+    <!-- link to font awesome -->
+    <script src="https://kit.fontawesome.com/c60a364630.js" crossorigin="anonymous"></script>
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Nova+Flat&display=swap" rel="stylesheet">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header id="home">
+            <div class="wrapper">
+                <nav>
+                    <!--The label for attribute lines up with the input ID. When it is clicked, the browser (un)checks the associated checkbox-->
+                    <label for="toggle"><i class="fa fa-bars"></i></label>
+                    <input type="checkbox" id="toggle" name="toggle" unchecked/>
+                    <ul class="top-ul">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <ul class="social-ul">
+                    <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.snapchat.com"><i class="fab fa-snapchat-ghost"></i></a></li>
+                    <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <h1>Foot forward</h1>
+            </div>
+        </header>
+        <main>
+            <section class="section-one clearfix">
+                <div class="box-one">
+                    <!-- I used background-image property instead of images coded in html for easier styling. However, as there are no alt tags, I included img role and aria label for accessibility compliance -->
+                    <span class="background-image" role="img" aria-label="A wall mounted shoe rack with a lot of different sneakers"></span>
+                </div>
+                <div class="wrapper clearfix">
+                    <div class="box-two">
+                        <h2>We specialize in:</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam et quaerat voluptatibus porro veniam officia excepturi nulla vero voluptas molestiae nostrum quod itaque ipsa fuga adipisci, a, modi obcaecati laudantium odio nisi, iste architecto. Quod, quaerat.</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-two clearfix">
+                <div class="box-three">
+                    <!-- I used background-image property instead of images coded in html for easier styling. However, as there are no alt tags, I included img role and aria label for accessibility compliance -->
+                    <span class="background-image" role="img" aria-label="A hand holding a dusty pink sneaker in the white background"></span>
+                </div>
+                <div class="wrapper clearfix">
+                    <div class="box-four">
+                        <h2>Foot care</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sapiente provident deserunt neque est aut voluptas iure cumque suscipit quasi recusandae officiis at, vitae veritatis accusamus porro harum itaque. Iusto nisi reprehenderit suscipit quae est sequi a omnis. Minus, quis.</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-three clearfix">
+                <div class="wrapper clearfix">
+                    <div class="box-five">
+                        <img class='image-three' src="./assets/image-6@2x.png" alt="A person's feet in grey white sneakers wearing white socks with black lettering standing in a puddle">
+                    </div>
+                    <div class="box-six">
+                        <h2>Giving back</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nam harum recusandae labore inventore tempora vel ab totam, animi provident. Exercitationem, odit ea aperiam minima dicta eaque perferendis necessitatibus nostrum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. In nam harum recusandae labore inventore tempora vel ab totam, animi provident. Exercitationem, odit ea aperiam minima dicta eaque perferendis necessitatibus nostrum!</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-four clearfix">
+                <div class="wrapper">
+                    <ul>
+                        <li>
+                            <i class="fas fa-shopping-bag"></i>
+                            <h3>Products</h3>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <h3>Community</h3>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <h3>Reach out</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section-five wrapper clearfix">
+                <h2>The gram</h2>
+                <ul>
+                    <li>
+                    <img src="./assets/image-2@2x.png" alt="A hand holding a black sneaker in the sky background">
+                    </li>
+                    <li>
+                        <img src="./assets/image-3@2x.png" alt="Feet of a person wearing jeans and white Converse shoes with a focus on the shoes">
+                    </li>
+                    <li>
+                        <img src="./assets/image-4@2x.png" alt="A hand holding a white sneaker">
+                    </li>
+                </ul>
+            </section>
+            <section class="contact-section clearfix" id="contact">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="bottom-subsection">
+                        <div class="contact">
+                            <h2>Contact</h2>
+                            <p>info@email.com | 123 - 456 - 7890</p>
+                            <p>123 some road, Toronto, ON</p>
+                            <p>A5A 5A5, Canada</p>
+                        </div>
+                        <form action="#" class="clearfix">
+                            <label for="email">Stay updated</label>
+                            <p>Subscribe to our newsletter to stay updated.</p>
+                            <input type="email" id="email" name="email" placeholder="email address">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright © 2019 HackerYou</p>
+        </footer>
+    </div>
+</body>
+</html>
