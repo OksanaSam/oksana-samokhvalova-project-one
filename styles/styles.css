@@ -61,12 +61,11 @@ body {
 }
 
 /* header styles */
+/* I used the same image for both desktop and mobile background by playing with background position */
 header {
-    background-image: url('../assets/image-1@2x.png');
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../assets/image-1@2x_optimized.png') no-repeat center;
     background-size: cover;
+    height: 100vh;
     position: relative;
 }
 
@@ -139,12 +138,13 @@ input[type="checkbox"] {
 	display: none;  /* hiding the input */
 }
 
+/* positioning the hamburger menu */
 label[for="toggle"] {
-	/* positioning the hamburger menu */
-    display: none;
+	display: none;
     z-index: 10;
     color: rgb(24, 102, 132);
     text-align: right;
+    font-size: 4.5rem;
 }
 
 /* section-one styles */
@@ -154,12 +154,10 @@ label[for="toggle"] {
 
 .box-one {
     width: 50%;
-    float: right;
-    background-image: url('../assets/image-2_2@2x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100%;
+    float: right;
+    background: url('../assets/image-2_2@2x_optimized.png') no-repeat center;
+    background-size: cover;
 }
 
 .box-two {
@@ -212,7 +210,7 @@ h2 {
 .box-three {
     width: 50%;
     float: left;
-    background: url('../assets/image-2-copy@2x.png') no-repeat center;
+    background: url('../assets/image-2-copy@2x_optimized.png') no-repeat center;
     background-size: cover;
     height: 100%;
 }
@@ -242,10 +240,8 @@ h2 {
 
 /* section-four styles */
 .section-four {
-    background-image: url('../assets/image-5@2x.png');
+    background: url('../assets/image-5@2x.png') no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     text-align: center;
 }
 
@@ -257,8 +253,7 @@ h3 {
 
 .section-four ul {
     display: inline-block;
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin: 15% 0;
 }
 
 .section-four li {
@@ -321,7 +316,8 @@ h3 {
 }
 
 .contact-section a:hover,
-.contact-section a:focus {
+.contact-section a:focus,
+.contact h2 {
     color: rgb(232, 91, 38);
 } 
 
@@ -335,11 +331,7 @@ h3 {
     padding-top: 20px;
 }
 
-.contact h2 {
-    color: rgb(232, 91, 38);
-}
-
-label {
+form label {
     font-family: 'Nova Flat', cursive;
     font-weight: 400;
     font-size: 4.2rem;
@@ -467,30 +459,34 @@ footer {
     .box-six {
         width: 100%;
         float: none;
-    }
-
-    .box-one,
-    .box-two,
-    .box-three,
-    .box-four,
-    .box-five,
-    .box-six {
         height: 50%;
-    } 
+    }
     
     .box-one {
         background-position: bottom;
     }
 
     .box-two,
-    .box-four,
-    .box-five {
+    .box-four {
         padding: 7% 5%;
     }
 
     .box-three {
         background-position: center;
     }
+
+    .box-five {
+        text-align: center;
+    }
+
+    .image-three {
+        display: inline-block;
+    }
+    
+    .box-six {
+        padding: 7% 5% 0;
+    }
+    
 
     /* section-four styles */
     .section-four li {
@@ -535,25 +531,23 @@ footer {
 
     /* header styles */
     h1 {
-        /* font-size: 7rem;  */
         top: 50%;
         right: 10%;
     }
 
+    /* making button for hamburger menu visible to the user */
     label[for="toggle"] {
-        /* making button for hamburger menu visible to the user */
         display: block;
     }
 
     .top-ul {
-        /* background-color: rgb(255, 255, 255); */
         background-color: rgba(227, 228, 234, 89%);
         position: absolute;
         z-index: 10;
         width: 40%;
-        right: -40%;
         top: 7%;
         transition: all 0.2s; /* animation */
+        display: none;
     }
     
     .top-ul li {
@@ -562,9 +556,10 @@ footer {
         padding: 20px;
     }
 
-    /* When the checkbox is checked, we are putting the .top-ul  back to right: 0 from right:-30%;*/
+    /* When the checkbox is checked, putting the .top-ul to the right and making menu items visible to the user*/
     input[type="checkbox"]:checked + .top-ul {
         right: 0;
+        display: block;
     }
 
     /* section-one and section-two styles */
@@ -594,6 +589,7 @@ footer {
         padding: 60px 0 0 0;
     }
 
+    /* even though it looks a bit strange in the mockup, I still aligned the text left as per mockup */
     .box-six p {
         text-align: left;
     }
